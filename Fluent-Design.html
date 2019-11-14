@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/style.css">
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="all">
+        <header>
+            <div class="container">
+                <div class="header_logo">
+                    <a href=""></a>
+                </div>
+                <h1 class="header_title">
+                    <a href="">Fluent Design System</a>
+                </h1>
+                <div class="header_navigation">
+                    <ul class="links">
+                        <li><a class="link1" href="">Web</a></li>
+                        <li><a class="link2" href="">Windows</a></li>
+                        <li><a class="link3" href="">iOS</a></li>
+                        <li><a class="link4" href="">Android</a></li>
+                    </ul>F
+                </div>
+            </div>
+            <div class="mobile_button"></div>
+            <div class="mobile_menu">
+                <ul class="menu_links">
+                    <li><a class="menu_link1" href="">Web</a></li>
+                    <li><a class="menu_link2" href="">Windows</a></li>
+                    <li><a class="menu_link3" href="">iOS</a></li>
+                    <li><a class="menu_link4" href="">Android</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="style_main">
+            <div class="style_introduction">
+                <div class="style_inner container">
+                    <div class="content_sc">
+                        <div class="title_sc">
+                            <h2>Fluent Design System</h2>
+                        </div>
+                        <div class="description_sc">
+                            <p>Fluent brings the fundamentals of principled design, innovation in technology, and customer needs together as one. It’s a collective approach to creating simplicity and coherence through a shared, open design system across platforms.</p>
+
+                            <p>Open ecosystem, open design system.</p>
+                        </div>
+                    </div>
+                    <div class="media_sc"></div>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".mobile_button").click(function () {
+                $(".mobile_menu").toggleClass("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

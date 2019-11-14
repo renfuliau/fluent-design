@@ -1,0 +1,296 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 100%;
+    display: block;
+
+    .all {
+        header {
+            width: 100%;
+            height: 48px;
+            position: relative;
+            background-color: transparent;
+
+            .header_logo {
+                width: 190px;
+                height: 48px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                @media (max-width: 1024px) {
+                    width: 60px;
+
+                }
+
+                a {
+                    background-image: url('/img/logo.png');
+                    background-position: center;
+                    background-size: cover;
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+
+                    &:hover {
+                        background-image: url('/img/logo2.png')
+                    }
+                }
+            }
+
+            .header_title {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+                line-height: 49px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                    -webkit-font-smoothing: antialiased;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: color 200ms linear 0ms;
+
+                    &:hover {
+                        color: rgb(0, 120, 212);
+                    }
+                }
+            }
+
+            .header_navigation {
+                height: 48px;
+                padding: 0px 120px 0px 420px;
+                flex: 1 1 auto;
+
+                @media (max-width: 1460px) {
+                    padding: 0px 60px 0px 120px;
+                }
+
+                .links {
+                    width: 100%;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+
+                    li {
+                        width: auto;
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        line-height: 49px;
+                        font-weight: 600;
+                        margin: 0px;
+                        padding: 0px;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                            -webkit-font-smoothing: antialiased;
+                            font-size: 16px;
+                            font-weight: 600;
+                            transition: color 200ms linear 0ms;
+
+                        }
+
+                        .link1:hover {
+                            color: rgb(37, 142, 222);
+                        }
+
+                        .link2:hover {
+                            color: rgb(79, 229, 255);
+                        }
+
+                        .link3:hover {
+                            color: rgb(207, 143, 255);
+                        }
+
+                        .link4:hover {
+                            color: rgb(105, 229, 110);
+                        }
+                    }
+
+                }
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        .mobile_button {
+            width: 48px;
+            height: 48px;
+            background-image: url('/img/menu.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+
+        .mobile_menu {
+            position: fixed;
+            top: 48px;
+            left: 0px;
+            height: calc(100vh - 48px);
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            z-index: 10;
+            transform: translateY(0px);
+            transition: all 300ms ease 300ms;
+            opacity: 0;
+            pointer-events: none;
+
+
+        }
+
+        .active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .menu_links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                width: 100%;
+                font-size: 20px;
+                opacity: 1;
+                padding: 0px;
+                margin: 0px;
+                transition: all 300ms ease 0ms;
+
+                a {
+                    color: rgb(255, 255, 255);
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    padding: 25px 30px;
+                    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                    -webkit-font-smoothing: antialiased;
+                }
+            }
+
+            .menu_link1:hover {
+                color: rgb(0, 0, 0);
+                background-color: rgb(37, 142, 222);
+            }
+
+            .menu_link2:hover {
+                color: rgb(0, 0, 0);
+                background-color: rgb(79, 229, 255);
+            }
+
+            .menu_link3:hover {
+                color: rgb(0, 0, 0);
+                background-color: rgb(207, 143, 255);
+            }
+
+            .menu_link4:hover {
+                color: rgb(0, 0, 0);
+                background-color: rgb(105, 229, 110);
+
+            }
+        }
+    }
+
+    .style_main {
+        width: 100%;
+        position: relative;
+
+        .style_introduction {
+            width: 100%;
+            margin: 145px 0px 60px;
+
+            .style_inner {
+                .content_sc {
+                    width: 50%;
+
+                    .title_sc {
+                        width: 100%;
+
+                        h2 {
+                            font-size: 64px;
+                            line-height: 80px;
+                            color: rgb(79, 229, 255);
+                            font-weight: 600;
+                            margin: 0px 0px 0px -6px;
+                            font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                    }
+
+                    .description_sc {
+                        width: 100%;
+                        margin: 100px 0px 30px;
+
+                        p {
+                            width: 384px;
+                            color: rgb(255, 255, 255);
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 600;
+                            margin: 0px 0px 24px;
+                            font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                    }
+
+                }
+
+                .media_sc {
+                    width: 50%;
+                    padding: 0px 40px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.container {
+    width: 1536px;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: 1680px) {
+        width: 1336px;
+    }
+
+    @media (max-width: 1460px) {
+        width: 1136px;
+    }
+
+    @media (max-width: 1280px) {
+        width: 960px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    @media (max-width: 960px) {
+        width: 100%;
+        padding: 0px 30px;
+    }
+}
