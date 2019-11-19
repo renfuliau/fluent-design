@@ -237,7 +237,10 @@ body .style_main .style_introduction {
 }
 
 body .style_main .style_introduction .style_inner .content_sc {
-  width: 50%;
+  width: 410px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 body .style_main .style_introduction .style_inner .content_sc .title_sc {
@@ -260,7 +263,7 @@ body .style_main .style_introduction .style_inner .content_sc .description_sc {
 }
 
 body .style_main .style_introduction .style_inner .content_sc .description_sc p {
-  width: 384px;
+  width: 352px;
   color: white;
   font-size: 16px;
   line-height: 24px;
@@ -271,8 +274,29 @@ body .style_main .style_introduction .style_inner .content_sc .description_sc p 
 }
 
 body .style_main .style_introduction .style_inner .media_sc {
-  width: 50%;
-  padding: 0px 40px;
+  text-align: center;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+body .style_main .style_introduction .style_inner .media_sc .left-line {
+  width: 98px;
+  height: 57px;
+  position: absolute;
+  top: -15px;
+  right: 180px;
+  pointer-events: none;
+}
+
+body .style_main .style_introduction .style_inner .media_sc .right-line {
+  width: 98px;
+  height: 57px;
+  position: absolute;
+  bottom: 155px;
+  left: 180px;
+  pointer-events: none;
 }
 
 .container {

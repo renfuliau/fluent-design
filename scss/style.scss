@@ -221,7 +221,8 @@ body {
 
             .style_inner {
                 .content_sc {
-                    width: 50%;
+                    width: 410px;
+                    flex: 0 0 auto;
 
                     .title_sc {
                         width: 100%;
@@ -242,7 +243,7 @@ body {
                         margin: 100px 0px 30px;
 
                         p {
-                            width: 384px;
+                            width: 352px;
                             color: rgb(255, 255, 255);
                             font-size: 16px;
                             line-height: 24px;
@@ -256,8 +257,25 @@ body {
                 }
 
                 .media_sc {
-                    width: 50%;
-                    padding: 0px 40px;
+                    text-align: center;
+                    position: relative;
+                    flex: 1 1 auto;
+
+                    .left-line {
+                        width: 98px;
+                        height: 57px;
+                        position: absolute;
+                        top: -15px;
+                        right: 180px;
+                        pointer-events: none;
+                    }
+
+                    .right-line {
+                        position: absolute;
+                        bottom: 155px;
+                        left: 180px;
+                        pointer-events: none;
+                    }
                 }
             }
 
