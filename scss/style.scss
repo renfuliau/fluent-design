@@ -220,9 +220,22 @@ body {
             margin: 145px 0px 60px;
 
             .style_inner {
+
                 .content_sc {
                     width: 410px;
                     flex: 0 0 auto;
+
+                    @media (max-width: 1280px) {
+                        width: 50%;
+                    }
+
+                    @media (max-width: 960px) {
+                        width: 60%;
+                    }
+
+                    @media (max-width: 670px) {
+                        width: 100%;
+                    }
 
                     .title_sc {
                         width: 100%;
@@ -235,6 +248,17 @@ body {
                             margin: 0px 0px 0px -6px;
                             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
                             -webkit-font-smoothing: antialiased;
+
+                            @media (max-width: 767px) {
+                                font-size: 48px;
+                                line-height: 60px;
+                            }
+
+                            @media (max-width: 670px) {
+                                font-size: 48px;
+                                line-height: 58px;
+                            }
+
                         }
                     }
 
@@ -261,21 +285,72 @@ body {
                     position: relative;
                     flex: 1 1 auto;
 
-                    .left-line {
-                        width: 98px;
-                        height: 57px;
-                        position: absolute;
-                        top: -15px;
-                        right: 180px;
-                        pointer-events: none;
+                    @media (max-width: 1280px) {
+                        width: 50%;
+                        padding: 0px 40px;
                     }
 
-                    .right-line {
+                    @media (max-width: 960px) {
+                        width: 40%;
+                        padding: 0px 0px 0px 30px;
+                    }
+
+                    @media (max-width: 670px) {
+                        display: none;
+                    }
+
+
+                    .left-line {
                         position: absolute;
                         bottom: 155px;
                         left: 180px;
                         pointer-events: none;
+
+                        @media (max-width: 1680px) {
+                            bottom: 160px;
+                            left: 30px;
+                        }
+
+                        @media (max-width: 1460px) {
+                            bottom: 120px;
+                            left: 30px;
+                        }
+
+                        @media (max-width: 1280px) {
+                            display: none;
+                        }
                     }
+
+                    .mid-line {
+                        @media (max-width: 1280px) {
+                            max-width: 100%;
+                        }
+                    }
+
+                    .right-line {
+                        position: absolute;
+                        top: -15px;
+                        right: 180px;
+                        pointer-events: none;
+
+                        @media (max-width: 1680px) {
+                            top: -40px;
+                            right: 36px;
+                        }
+
+                        @media (max-width: 1460px) {
+                            top: 15px;
+                            right: 36px;
+                        }
+
+                        @media (max-width: 1280px) {
+                            display: none;
+                        }
+                    }
+
+
+
+
                 }
             }
 
@@ -304,7 +379,7 @@ body {
 
     @media (max-width: 1024px) {
         width: 100%;
-        padding: 0px 30px;
+        padding: 30px;
     }
 
     @media (max-width: 960px) {
