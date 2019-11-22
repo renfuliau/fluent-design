@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-188.000000, -9.000000)">
+            <g transform="translate(188.000000, 9.000000)">
+                <rect fill="#000000" x="0" y="5.96166992" width="17" height="1"></rect>
+                <polyline stroke="#000000" points="10.9853516 0 17.4470215 6.46166992 10.9853516 12.9233398"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
