@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -363,7 +367,29 @@ body {
             width: 100%;
             position: relative;
 
-            .container_sc {
+            &::before {
+                content: "";
+                width: 50vw;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+                background-color: rgb(34, 128, 200);
+            }
+
+            &::after {
+                content: "";
+                width: 50vw;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 1;
+                background-color: rgb(95, 207, 99);
+            }
+
+            .container_platform {
                 display: flex;
                 flex-wrap: wrap;
                 width: 1536px;
@@ -422,14 +448,24 @@ body {
                             text-decoration: none;
 
                             .icon_sc {
-                                min-height: 96px;
+                                height: 236px;
                                 width: 100%;
                                 text-align: left;
-                                flex: 1 1 auto;
+                                // flex: 1 1 auto;
                                 padding: 26px;
 
+                                @media (max-width: 1460px) {
+                                    height: 156px;
+
+                                }
+
                                 @media (max-width: 1024px) {
+                                    height: 186px;
                                     padding: 30px 30px 16px;
+                                }
+
+                                @media (max-width: 500px) {
+                                    height: 116px;
                                 }
 
                                 img {
@@ -509,21 +545,270 @@ body {
 
                         .platform_Web {
                             background-color: rgb(37, 142, 222);
+
+                            &:hover {
+                                background-color: rgb(12, 117, 197);
+                            }
                         }
 
                         .platform_Windows {
                             background-color: rgb(79, 229, 255);
+
+                            &:hover {
+                                background-color: rgb(54, 204, 230);
+                            }
                         }
 
                         .platform_iOS {
                             background-color: rgb(207, 143, 255);
+
+                            &:hover {
+                                background-color: rgb(182, 118, 230);
+                            }
                         }
 
                         .platform_Android {
                             background-color: rgb(105, 229, 110);
+
+                            &:hover {
+                                background-color: rgb(80, 204, 85);
+                            }
                         }
                     }
 
+                }
+            }
+        }
+
+        .style_natural {
+            width: 100%;
+            min-height: 768px;
+            background: url(https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg) 50% center / cover no-repeat fixed rgb(204, 204, 204);
+
+            @media (max-width: 1280px) {
+                min-height: 668px;
+            }
+
+            @media (max-width: 960px) {
+                background-attachment: scroll;
+            }
+
+            @media (max-width: 670px) {
+                min-height: 768px;
+            }
+
+            .container_natural {
+                width: 1536px;
+                margin: 0px auto;
+
+                @media (max-width: 1680px) {
+                    width: 1336px;
+                }
+
+                @media (max-width: 1460px) {
+                    width: 1136px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 960px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    padding: 0px 30px;
+                }
+
+                @media (max-width: 400px) {
+                    padding: 0px 30px 60px;
+                }
+
+                .title_natural {
+                    width: 100%;
+                    opacity: 1;
+                    transform: translateY(0px);
+                    // opacity: 0;
+                    // transform: translateY(20px);
+                    padding: 10px 20px 0px;
+                    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+
+                    h2 {
+                        color: rgb(0, 0, 0);
+                        font-size: 128px;
+                        line-height: 150px;
+                        font-weight: 600;
+                        font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                        -webkit-font-smoothing: antialiased;
+                        margin: 0;
+                        padding: 0;
+
+                        @media (max-width: 1460px) {
+                            font-size: 96px;
+                            line-height: 120px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            font-size: 86px;
+                            line-height: 90px;
+                            margin: 0px;
+                        }
+
+                        @media (max-width: 670px) {
+                            font-size: 64px;
+                            line-height: 70px;
+                        }
+
+                        @media (max-width: 500px) {
+                            font-size: 48px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+
+                .content_natural {
+                    width: 100%;
+                    opacity: 1;
+                    transform: translateY(0px);
+                    // opacity: 0;
+                    // transform: translateY(20px);
+                    margin: 60px 0px 0px;
+                    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+
+                    .content_block {
+                        width: 100%;
+                        max-width: 384px;
+                        padding: 0px 16px 0px 24px;
+
+                        @media (max-width: 1280px) {
+                            margin: 0px;
+                            padding: 0px 5px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            padding: 0px 0px 0px 4px;
+                        }
+
+                        @media (max-width: 500px) {
+                            padding: 0px 0px 0px 4px;
+                        }
+
+                        p {
+                            color: rgb(0, 0, 0);
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 600;
+                            margin: 0px;
+                            font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                    }
+                }
+            }
+        }
+
+        .style_terraform_sphere {
+            width: 100%;
+            background-color: rgb(25, 25, 25);
+
+            .container_terra {
+                position: relative;
+                width: 1536px;
+                margin: 0px auto;
+
+                @media (max-width: 1680px) {
+                    width: 1336px;
+                }
+
+                @media (max-width: 1460px) {
+                    width: 1136px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 960px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    padding: 0px 30px;
+                }
+
+                .rect_sc {
+                    position: absolute;
+                    top: -200px;
+                    right: 130px;
+                    pointer-events: none;
+                    z-index: 4;
+                    transform: translateY(20px);
+                    // opacity: 0;
+                    // transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+                    opacity: 1;
+                    transform: translateY(0px);
+
+                    @media (max-width: 1680px) {
+                        right: 30px;
+                    }
+
+                    @media (max-width: 1460px) {
+                        top: -200px;
+                    }
+
+                    @media (max-width: 767px) {
+                        top: -300px;
+                        right: 100px;
+                    }
+
+                    @media (max-width: 670px) {
+                        display: none;
+                    }
+                }
+
+                .line_sc {
+                    position: absolute;
+                    top: 570px;
+                    left: 190px;
+                    pointer-events: none;
+                    // transform: translateY(400px);
+                    transform: translateY(0px);
+                    transition: transform 600ms linear 0ms;
+
+                    @media (max-width: 670px) {
+                        left: 90vw;
+                    }
+                }
+
+                .sphere_sc {
+                    width: 100%;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    // opacity: 0;
+                    // transform: scale(0.8);
+                    opacity: 1;
+                    transform: scale(1);
+                    padding: 100px 100px 50px;
+                    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .style_terra_description {
+            width: 100%;
+            background-color: rgb(25, 25, 25);
+
+            .container_description {
+                position: relative;
+                display: flex;
+                -webkit-box-pack: end;
+                justify-content: flex-end;
+                width: 1536px;
+                margin: 0px auto;
+                .content_sc_description {
+                    
                 }
             }
         }
