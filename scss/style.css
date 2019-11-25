@@ -1,6 +1,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   background-color: black;
   width: 100%;
   display: block;
+  overflow-x: hidden;
 }
 
 body .all header {
@@ -283,7 +286,6 @@ body .style_main .style_introduction .style_inner .content_sc .title_sc h2 {
   font-weight: 600;
   margin: 0px 0px 0px -6px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width: 767px) {
@@ -313,7 +315,6 @@ body .style_main .style_introduction .style_inner .content_sc .description_sc p 
   font-weight: 600;
   margin: 0px 0px 24px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 body .style_main .style_introduction .style_inner .media_sc {
@@ -581,7 +582,6 @@ body .style_main .style_platforms .container_platform .grid_sc .platforms_sc a .
   font-weight: 600;
   margin: 0px 0px 26px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 body .style_main .style_platforms .container_platform .grid_sc .platforms_sc a .content-sc p {
@@ -591,7 +591,6 @@ body .style_main .style_platforms .container_platform .grid_sc .platforms_sc a .
   font-weight: 600;
   margin: 0px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 body .style_main .style_platforms .container_platform .grid_sc .platforms_sc a .action_sc {
@@ -743,7 +742,6 @@ body .style_main .style_natural .container_natural .title_natural h2 {
   line-height: 150px;
   font-weight: 600;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
 }
@@ -821,7 +819,6 @@ body .style_main .style_natural .container_natural .content_natural .content_blo
   font-weight: 600;
   margin: 0px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 body .style_main .style_terraform_sphere {
@@ -938,6 +935,12 @@ body .style_main .style_terraform_sphere .container_terra .sphere_sc {
   transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
 }
 
+@media (max-width: 6770px) {
+  body .style_main .style_terraform_sphere .container_terra .sphere_sc {
+    padding: 60px 30px;
+  }
+}
+
 body .style_main .style_terraform_sphere .container_terra .sphere_sc img {
   max-width: 100%;
 }
@@ -957,6 +960,519 @@ body .style_main .style_terra_description .container_description {
       justify-content: flex-end;
   width: 1536px;
   margin: 0px auto;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_terra_description .container_description {
+    width: 1336px;
+  }
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_terra_description .container_description {
+    width: 1136px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_terra_description .container_description {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_terra_description .container_description {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_terra_description .container_description {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+}
+
+body .style_main .style_terra_description .container_description .content_sc_description {
+  width: 384px;
+  margin: 0px 0px 50px;
+  padding: 0px 16px;
+}
+
+@media (max-width: 960px) {
+  body .style_main .style_terra_description .container_description .content_sc_description {
+    padding: 0px;
+  }
+}
+
+body .style_main .style_terra_description .container_description .content_sc_description P {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+body .style_main .style_intuitive {
+  width: 100%;
+  position: relative;
+  background-color: #191919;
+}
+
+body .style_main .style_intuitive .title_intuitive {
+  position: absolute;
+  bottom: 80px;
+  left: 0px;
+  width: 100%;
+  z-index: 4;
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_intuitive .title_intuitive {
+    bottom: 60px;
+  }
+}
+
+body .style_main .style_intuitive .title_intuitive .container_intuitive {
+  width: 1536px;
+  margin: 0px auto;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive {
+    width: 1336px;
+  }
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive {
+    width: 1136px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+body .style_main .style_intuitive .title_intuitive .container_intuitive h2 {
+  color: #191919;
+  font-size: 128px;
+  line-height: 144px;
+  font-weight: 600;
+  margin: 0px 0px 0px 26px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive h2 {
+    font-size: 96px;
+    line-height: 128px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive h2 {
+    font-size: 96px;
+    line-height: 104px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive h2 {
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive h2 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .style_main .style_intuitive .title_intuitive .container_intuitive h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+body .style_main .style_intuitive div .media_sc_intuitive {
+  width: 100%;
+  opacity: 0.987936;
+  -webkit-transform: translate3d(0px, 1.20643px, 0px) scale(1.00241, 1.00241);
+          transform: translate3d(0px, 1.20643px, 0px) scale(1.00241, 1.00241);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+body .style_main .style_cloud {
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+  min-height: 948px;
+  background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center/cover no-repeat fixed black;
+}
+
+body .style_main .style_cloud .container_cloud {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 1536px;
+  margin: 0px auto;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_cloud .container_cloud {
+    width: 1336px;
+  }
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_cloud .container_cloud {
+    width: 1136px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_cloud .container_cloud {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_cloud .container_cloud {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+
+body .style_main .style_cloud .container_cloud .planes {
+  position: absolute;
+  top: -240px;
+  right: -260px;
+  width: 768px;
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_cloud .container_cloud .planes {
+    display: none;
+  }
+}
+
+body .style_main .style_cloud .container_cloud .planes div .solid_plane {
+  position: absolute;
+  top: -120px;
+  left: 2px;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translate3d(0px, -26.9379px, 0px);
+          transform: translate3d(0px, -26.9379px, 0px);
+}
+
+body .style_main .style_cloud .container_cloud .planes .outline_plane {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+body .style_main .style_cloud .container_cloud div .De_header {
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  font-size: 395px;
+  line-height: 1;
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_cloud .container_cloud div .De_header {
+    font-size: 295px;
+    top: -40px;
+  }
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_cloud .container_cloud div .De_header {
+    top: -20px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_cloud .container_cloud div .De_header {
+    font-size: 228px;
+    top: 40px;
+    left: 14px;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_cloud .container_cloud div .De_header {
+    font-size: 168px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .style_main .style_cloud .container_cloud div .De_header {
+    font-size: 128px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .style_main .style_cloud .container_cloud div .De_header {
+    font-size: 96px;
+  }
+}
+
+body .style_main .style_cloud .container_cloud div .sign_header {
+  position: absolute;
+  top: 140px;
+  right: -30px;
+  font-size: 395px;
+  line-height: 1;
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_cloud .container_cloud div .sign_header {
+    font-size: 295px;
+    top: 120px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_cloud .container_cloud div .sign_header {
+    top: 180px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_cloud .container_cloud div .sign_header {
+    font-size: 228px;
+    top: 220px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_cloud .container_cloud div .sign_header {
+    font-size: 168px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .style_main .style_cloud .container_cloud div .sign_header {
+    font-size: 128px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .style_main .style_cloud .container_cloud div .sign_header {
+    font-size: 96px;
+    top: 160px;
+  }
+}
+
+body .style_main .style_cloud .container_cloud .line_cloud {
+  position: absolute;
+  top: 550px;
+  left: 370px;
+  pointer-events: none;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+  transition: opacity 600ms linear 0ms, transform 600ms linear 0ms, -webkit-transform 600ms linear 0ms;
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_cloud .container_cloud .line_cloud {
+    top: 550px;
+    left: 370px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_cloud .container_cloud .line_cloud {
+    display: none;
+  }
+}
+
+body .style_main .style_engaging {
+  width: 100%;
+  background-color: #cccccc;
+  min-height: 820px;
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_engaging {
+    min-height: 668px;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_engaging {
+    min-height: 468px;
+  }
+}
+
+body .style_main .style_engaging .container_engaging {
+  width: 1536px;
+  position: relative;
+  margin: 0px auto;
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_engaging .container_engaging {
+    width: 1336px;
+  }
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_engaging .container_engaging {
+    width: 1136px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_engaging .container_engaging {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_engaging .container_engaging {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  body .style_main .style_engaging .container_engaging {
+    width: 100%;
+    padding: 0px 30px 40px;
+  }
+}
+
+body .style_main .style_engaging .container_engaging .title_engaging {
+  width: 100%;
+  padding: 140px 40px 0px 8px;
+}
+
+@media (max-width: 1460px) {
+  body .style_main .style_engaging .container_engaging .title_engaging {
+    padding: 60px 40px 0px 8px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_engaging .container_engaging .title_engaging {
+    padding: 29px 0px 0px;
+  }
+}
+
+body .style_main .style_engaging .container_engaging .title_engaging h2 {
+  color: black;
+  font-size: 128px;
+  line-height: 150px;
+  font-weight: 600;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_engaging .container_engaging .title_engaging h2 {
+    font-size: 96px;
+    line-height: 104px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_engaging .container_engaging .title_engaging h2 {
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_engaging .container_engaging .title_engaging h2 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .style_main .style_engaging .container_engaging .title_engaging h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+body .style_main .style_engaging .container_engaging .content_engaging {
+  width: 100%;
+  margin: 60px 0px 0px;
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_engaging .container_engaging .content_engaging {
+    margin: 40px 0px 0px;
+  }
+}
+
+body .style_main .style_engaging .container_engaging .content_engaging .content_engaging_block {
+  width: 100%;
+  max-width: 384px;
+  padding: 0px 16px;
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_engaging .container_engaging .content_engaging .content_engaging_block {
+    padding: 0px 0px 0px 4px;
+  }
+}
+
+body .style_main .style_engaging .container_engaging .content_engaging .content_engaging_block P {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
 .container {

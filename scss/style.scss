@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -8,6 +10,7 @@ body {
     background-color: black;
     width: 100%;
     display: block;
+    overflow-x: hidden;
 
     .all {
         header {
@@ -254,7 +257,7 @@ body {
                             font-weight: 600;
                             margin: 0px 0px 0px -6px;
                             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-                            -webkit-font-smoothing: antialiased;
+
 
                             @media (max-width: 767px) {
                                 font-size: 48px;
@@ -281,7 +284,7 @@ body {
                             font-weight: 600;
                             margin: 0px 0px 24px;
                             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-                            -webkit-font-smoothing: antialiased;
+
                         }
                     }
 
@@ -497,7 +500,7 @@ body {
                                     font-weight: 600;
                                     margin: 0px 0px 26px;
                                     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-                                    -webkit-font-smoothing: antialiased;
+
 
                                 }
 
@@ -508,7 +511,7 @@ body {
                                     font-weight: 600;
                                     margin: 0px;
                                     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-                                    -webkit-font-smoothing: antialiased;
+
                                 }
                             }
 
@@ -637,7 +640,6 @@ body {
                         line-height: 150px;
                         font-weight: 600;
                         font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-                        -webkit-font-smoothing: antialiased;
                         margin: 0;
                         padding: 0;
 
@@ -698,7 +700,7 @@ body {
                             font-weight: 600;
                             margin: 0px;
                             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-                            -webkit-font-smoothing: antialiased;
+
                         }
                     }
                 }
@@ -789,6 +791,10 @@ body {
                     padding: 100px 100px 50px;
                     transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
 
+                    @media (max-width: 6770px) {
+                        padding: 60px 30px;
+                    }
+
                     img {
                         max-width: 100%;
                     }
@@ -807,13 +813,422 @@ body {
                 justify-content: flex-end;
                 width: 1536px;
                 margin: 0px auto;
+
+                @media (max-width: 1680px) {
+                    width: 1336px;
+                }
+
+                @media (max-width: 1460px) {
+                    width: 1136px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 960px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    padding: 30px;
+                }
+
+                @media (max-width: 670px) {
+                    -webkit-box-pack: start;
+                    justify-content: flex-start;
+                }
+
                 .content_sc_description {
-                    
+                    width: 384px;
+                    margin: 0px 0px 50px;
+                    padding: 0px 16px;
+
+                    @media (max-width: 960px) {
+                        padding: 0px;
+                    }
+
+                    P {
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        margin: 0px;
+                        font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+                    }
+                }
+            }
+        }
+
+        .style_intuitive {
+            width: 100%;
+            position: relative;
+            background-color: rgb(25, 25, 25);
+
+            .title_intuitive {
+                position: absolute;
+                bottom: 80px;
+                left: 0px;
+                width: 100%;
+                z-index: 4;
+
+                @media (max-width: 1024px) {
+                    bottom: 60px;
+                }
+
+                .container_intuitive {
+                    width: 1536px;
+                    margin: 0px auto;
+
+                    @media (max-width: 1680px) {
+                        width: 1336px;
+                    }
+
+                    @media (max-width: 1460px) {
+                        width: 1136px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        width: 960px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        width: 100%;
+                        padding: 30px;
+                    }
+
+                    h2 {
+                        color: rgb(25, 25, 25);
+                        font-size: 128px;
+                        line-height: 144px;
+                        font-weight: 600;
+                        margin: 0px 0px 0px 26px;
+                        font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+                        @media (max-width: 1680px) {
+                            font-size: 96px;
+                            line-height: 128px;
+                        }
+
+                        @media (max-width: 1280px) {
+                            font-size: 96px;
+                            line-height: 104px;
+                            margin: 0px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            font-size: 86px;
+                            line-height: 90px;
+                            margin: 0;
+                        }
+
+                        @media (max-width: 670px) {
+                            font-size: 64px;
+                            line-height: 70px;
+                        }
+
+                        @media (max-width: 500px) {
+                            font-size: 48px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+            }
+
+            div {
+                .media_sc_intuitive {
+                    width: 100%;
+                    // transform: translateY(200px) scale(1.2);
+                    // opacity: 0;
+                    opacity: 0.987936;
+                    transform: translate3d(0px, 1.20643px, 0px) scale(1.00241, 1.00241);
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    object-fit: contain;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .style_cloud {
+            position: relative;
+            top: 0px;
+            z-index: 2;
+            width: 100%;
+            min-height: 948px;
+            background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+
+            .container_cloud {
+                position: relative;
+                display: flex;
+                height: 100%;
+                width: 1536px;
+                margin: 0px auto;
+
+                @media (max-width: 1680px) {
+                    width: 1336px;
+                }
+
+                @media (max-width: 1460px) {
+                    width: 1136px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 960px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    padding: 0px 30px;
+                }
+
+                .planes {
+                    position: absolute;
+                    top: -240px;
+                    right: -260px;
+                    width: 768px;
+
+                    @media (max-width: 1460px) {
+                        display: none;
+                    }
+
+                    div .solid_plane {
+                        position: absolute;
+                        top: -120px;
+                        left: 2px;
+                        z-index: 2;
+                        opacity: 1;
+                        // transform: translateY(122px);
+                        transform: translate3d(0px, -26.9379px, 0px);
+
+                    }
+
+                    .outline_plane {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        z-index: 1;
+                    }
+                }
+
+                div .De_header {
+                    position: absolute;
+                    top: -100px;
+                    left: 0px;
+                    font-size: 395px;
+                    line-height: 1;
+                    color: rgb(0, 0, 0);
+                    font-weight: 600;
+                    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+                    @media (max-width: 1680px) {
+                        font-size: 295px;
+                        top: -40px;
+                    }
+
+                    @media (max-width: 1460px) {
+                        top: -20px;
+                        left: 0px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        font-size: 228px;
+                        top: 40px;
+                        left: 14px;
+                    }
+
+                    @media (max-width: 670px) {
+                        font-size: 168px;
+
+                    }
+
+                    @media (max-width: 500px) {
+                        font-size: 128px;
+                    }
+
+                    @media (max-width: 400px) {
+                        font-size: 96px;
+                    }
+                }
+
+                div .sign_header {
+                    position: absolute;
+                    top: 140px;
+                    right: -30px;
+                    font-size: 395px;
+                    line-height: 1;
+                    color: rgb(0, 0, 0);
+                    font-weight: 600;
+                    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+                    @media (max-width: 1680px) {
+                        font-size: 295px;
+                        top: 120px;
+                        right: -30px;
+                    }
+
+                    @media (max-width: 1460px) {
+                        top: 180px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        font-size: 228px;
+                        top: 220px;
+                        right: 10px;
+                    }
+
+                    @media (max-width: 670px) {
+                        font-size: 168px;
+
+                    }
+
+                    @media (max-width: 500px) {
+                        font-size: 128px;
+                    }
+
+                    @media (max-width: 400px) {
+                        font-size: 96px;
+                        top: 160px;
+                    }
+                }
+
+                .line_cloud {
+                    position: absolute;
+                    top: 550px;
+                    left: 370px;
+                    pointer-events: none;
+                    // opacity: 0;
+                    // transform: translateY(20px);
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+
+                    @media (max-width: 1460px) {
+                        top: 550px;
+                        left: 370px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .style_engaging {
+            width: 100%;
+            background-color: rgb(204, 204, 204);
+            min-height: 820px;
+            position: relative;
+
+            @media (max-width: 1280px) {
+                min-height: 668px;
+            }
+
+            @media (max-width: 670px) {
+                min-height: 468px;
+            }
+
+            .container_engaging {
+                width: 1536px;
+                position: relative;
+                margin: 0px auto;
+
+                @media (max-width: 1680px) {
+                    width: 1336px;
+                }
+
+                @media (max-width: 1460px) {
+                    width: 1136px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 960px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    padding: 30px;
+                }
+
+                @media (max-width: 960px) {
+                    width: 100%;
+                    padding: 0px 30px 40px;
+                }
+
+                .title_engaging {
+                    width: 100%;
+                    padding: 140px 40px 0px 8px;
+
+                    @media (max-width: 1460px) {
+                        padding: 60px 40px 0px 8px;
+                    }
+
+                    @media (max-width: 1280px) {
+                        padding: 29px 0px 0px;
+                    }
+
+                    h2 {
+                        color: rgb(0, 0, 0);
+                        font-size: 128px;
+                        line-height: 150px;
+                        font-weight: 600;
+                        font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+                        @media (max-width: 1280px) {
+                            font-size: 96px;
+                            line-height: 104px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            font-size: 86px;
+                            line-height: 90px;
+                            margin: 0px;
+                        }
+
+                        @media (max-width: 670px) {
+                            font-size: 64px;
+                            line-height: 70px;
+                        }
+
+                        @media (max-width: 500px) {
+                            font-size: 48px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+
+                .content_engaging {
+                    width: 100%;
+                    margin: 60px 0px 0px;
+
+                    @media (max-width: 670px) {
+                        margin: 40px 0px 0px;
+                    }
+
+                    .content_engaging_block {
+                        width: 100%;
+                        max-width: 384px;
+                        padding: 0px 16px;
+
+                        @media (max-width: 1024px) {
+                            padding: 0px 0px 0px 4px;
+                        }
+
+                        P {
+                            color: rgb(0, 0, 0);
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 600;
+                            margin: 0px;
+                            font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 
 
 
