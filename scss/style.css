@@ -1475,6 +1475,58 @@ body .style_main .style_engaging .container_engaging .content_engaging .content_
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
+body .style_main .style_engaging .media_sc_engaging {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_engaging .media_sc_engaging {
+    right: -20vw;
+  }
+}
+
+@media (max-width: 767px) {
+  body .style_main .style_engaging .media_sc_engaging {
+    right: -20vw;
+  }
+}
+
+@media (max-width: 670px) {
+  body .style_main .style_engaging .media_sc_engaging {
+    display: none;
+  }
+}
+
+body .style_main .style_engaging .media_sc_engaging img {
+  max-width: 1000px;
+}
+
+@media (max-width: 1940px) {
+  body .style_main .style_engaging .media_sc_engaging img {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1680px) {
+  body .style_main .style_engaging .media_sc_engaging img {
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_engaging .media_sc_engaging img {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 767px) {
+  body .style_main .style_engaging .media_sc_engaging img {
+    max-width: 60vw;
+  }
+}
+
 .container {
   width: 1536px;
   margin: 0 auto;

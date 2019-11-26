@@ -1225,6 +1225,51 @@ body {
                     }
                 }
             }
+
+            .media_sc_engaging {
+                position: absolute;
+                top: 200px;
+                right: 0px;
+
+                @media (max-width: 1024px) {
+                    right: -20vw;
+                }
+
+                @media (max-width: 767px) {
+                    right: -20vw;
+                }
+
+                @media (max-width: 670px) {
+                    display: none;
+                }
+
+                img {
+                    max-width: 1000px;
+
+                    @media (max-width: 1940px) {
+                        max-width: 900px;
+                    }
+
+                    @media (max-width: 1680px) {
+                        max-width: 50vw;
+                    }
+
+                    @media (max-width: 1024px) {
+                        max-width: 70vw;
+                    }
+
+                    @media (max-width: 767px) {
+                        max-width: 60vw;
+                    }
+                }
+            }
+        }
+
+        .style_space {
+
+            .container_space {
+                
+            }
         }
     }
 }
