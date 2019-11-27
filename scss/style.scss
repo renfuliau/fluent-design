@@ -1,4 +1,11 @@
-$font-all: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+$font-all: "Segoe UI",
+"Segoe UI Web (West European)",
+"Segoe UI",
+-apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Helvetica Neue",
+sans-serif;
 
 * {
     box-sizing: border-box;
@@ -1461,7 +1468,10 @@ body {
                             }
 
                             .content_sc {
-
+                                width: 100%;
+                                padding: 16px;
+                                flex: 1 1 auto;
+                                margin: 2px 0px 0px;
                                 p {
                                     color: rgb(255, 255, 255);
                                     transition: color 200ms linear 0ms;
@@ -1469,7 +1479,7 @@ body {
                                     line-height: 40px;
                                     font-weight: 600;
                                     font-family: $font-all;
-                                    
+
                                 }
                             }
                         }
@@ -1495,7 +1505,10 @@ body {
                             }
 
                             .content_sc {
-
+                                width: 100%;
+                                padding: 16px;
+                                flex: 1 1 auto;
+                                margin: 2px 0px 0px;
                                 p {
                                     color: rgb(255, 255, 255);
                                     transition: color 200ms linear 0ms;
@@ -1503,7 +1516,7 @@ body {
                                     line-height: 40px;
                                     font-weight: 600;
                                     font-family: $font-all;
-                                    
+
                                 }
                             }
                         }
@@ -1529,6 +1542,10 @@ body {
                             }
 
                             .content_sc {
+                                width: 100%;
+                                padding: 16px;
+                                flex: 1 1 auto;
+                                margin: 2px 0px 0px;
 
                                 p {
                                     color: rgb(255, 255, 255);
@@ -1537,7 +1554,7 @@ body {
                                     line-height: 40px;
                                     font-weight: 600;
                                     font-family: $font-all;
-                                    
+
                                 }
                             }
                         }
@@ -1563,7 +1580,10 @@ body {
                             }
 
                             .content_sc {
-
+                                width: 100%;
+                                padding: 16px;
+                                flex: 1 1 auto;
+                                margin: 2px 0px 0px;
                                 p {
                                     color: rgb(255, 255, 255);
                                     transition: color 200ms linear 0ms;
@@ -1571,7 +1591,7 @@ body {
                                     line-height: 40px;
                                     font-weight: 600;
                                     font-family: $font-all;
-                                    
+
                                 }
                             }
                         }
