@@ -1472,6 +1472,7 @@ body {
                                 padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
+
                                 p {
                                     color: rgb(255, 255, 255);
                                     transition: color 200ms linear 0ms;
@@ -1480,8 +1481,20 @@ body {
                                     font-weight: 600;
                                     font-family: $font-all;
 
+                                    @media (max-width: 1280px) {
+                                        font-size: 28px;
+                                    }
                                 }
                             }
+
+                            .icon_title_sc {
+                                width: 100%;
+                                display: flex;
+                                padding: 16px;
+                                flex: 0 0 auto;
+                            }
+
+
                         }
                     }
 
@@ -1509,6 +1522,7 @@ body {
                                 padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
+
                                 p {
                                     color: rgb(255, 255, 255);
                                     transition: color 200ms linear 0ms;
@@ -1517,6 +1531,9 @@ body {
                                     font-weight: 600;
                                     font-family: $font-all;
 
+                                    @media (max-width: 1280px) {
+                                        font-size: 28px;
+                                    }
                                 }
                             }
                         }
@@ -1555,6 +1572,9 @@ body {
                                     font-weight: 600;
                                     font-family: $font-all;
 
+                                    @media (max-width: 1280px) {
+                                        font-size: 28px;
+                                    }
                                 }
                             }
                         }
@@ -1584,6 +1604,7 @@ body {
                                 padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
+
                                 p {
                                     color: rgb(255, 255, 255);
                                     transition: color 200ms linear 0ms;
@@ -1591,6 +1612,29 @@ body {
                                     line-height: 40px;
                                     font-weight: 600;
                                     font-family: $font-all;
+
+                                    @media (max-width: 1280px) {
+                                        font-size: 28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div {
+                        a {
+                            div {
+                                div {
+                                    svg {
+                                        max-width: 20px;
+                                        height: auto;
+                                        overflow: hidden;
+
+                                        path {
+                                            fill: rgb(255, 255, 255);
+                                            transition: fill 200ms linear 0ms;
+                                        }
+                                    }
 
                                 }
                             }

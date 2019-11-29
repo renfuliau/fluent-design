@@ -1800,6 +1800,23 @@ body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .content_s
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
+@media (max-width: 1280px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .content_sc p {
+    font-size: 28px;
+  }
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .icon_title_sc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving {
   width: 25%;
   height: 384px;
@@ -1844,6 +1861,12 @@ body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .cont
   line-height: 40px;
   font-weight: 600;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .content_sc p {
+    font-size: 28px;
+  }
 }
 
 body .style_main .style_media_sc .container_media .grid_sc .sc3_designing {
@@ -1892,6 +1915,12 @@ body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .con
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
+@media (max-width: 1280px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .content_sc p {
+    font-size: 28px;
+  }
+}
+
 body .style_main .style_media_sc .container_media .grid_sc .sc4_designing {
   width: 25%;
   height: 384px;
@@ -1936,6 +1965,24 @@ body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .con
   line-height: 40px;
   font-weight: 600;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1280px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .content_sc p {
+    font-size: 28px;
+  }
+}
+
+body .style_main .style_media_sc .container_media .grid_sc div a div div svg {
+  max-width: 20px;
+  height: auto;
+  overflow: hidden;
+}
+
+body .style_main .style_media_sc .container_media .grid_sc div a div div svg path {
+  fill: white;
+  -webkit-transition: fill 200ms linear 0ms;
+  transition: fill 200ms linear 0ms;
 }
 
 .container {
