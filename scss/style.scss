@@ -1494,6 +1494,26 @@ body {
                                 flex: 0 0 auto;
                             }
 
+                            .icon_title_sc {
+                                .icon_sc {
+                                    svg {
+                                        path {
+                                            fill: rgb(255, 255, 255);
+                                            transition: fill 200ms linear 0ms;
+                                        }
+                                    }
+                                }
+
+                                .title_sc {
+                                    align-items: center;
+                                    flex: 1 1 auto;
+
+                                    label {
+                                        color: rgb(255, 255, 255);
+                                        font-family: $font-all;
+                                    }
+                                }
+                            }
 
                         }
                     }
@@ -1533,6 +1553,27 @@ body {
 
                                     @media (max-width: 1280px) {
                                         font-size: 28px;
+                                    }
+                                }
+                            }
+
+                            .icon_title_sc {
+                                .icon_sc {
+                                    svg {
+                                        path {
+                                            fill: rgb(255, 255, 255);
+                                            transition: fill 200ms linear 0ms;
+                                        }
+                                    }
+                                }
+
+                                .title_sc {
+                                    align-items: center;
+                                    flex: 1 1 auto;
+
+                                    label {
+                                        color: rgb(255, 255, 255);
+                                        font-family: $font-all;
                                     }
                                 }
                             }
@@ -1577,6 +1618,27 @@ body {
                                     }
                                 }
                             }
+
+                            .icon_title_sc {
+                                .icon_sc {
+                                    svg {
+                                        path {
+
+                                            transition: fill 200ms linear 0ms;
+                                        }
+                                    }
+                                }
+
+                                .title_sc {
+                                    align-items: center;
+                                    flex: 1 1 auto;
+
+                                    label {
+                                        color: rgb(0, 0, 0);
+                                        font-family: $font-all;
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -1618,24 +1680,188 @@ body {
                                     }
                                 }
                             }
+
+                            .icon_title_sc {
+                                .icon_sc {
+                                    svg {
+                                        path {
+                                            transition: fill 200ms linear 0ms;
+                                        }
+                                    }
+                                }
+
+                                .title_sc {
+                                    align-items: center;
+                                    flex: 1 1 auto;
+
+                                    label {
+                                        color: rgb(0, 0, 0);
+                                        font-family: $font-all;
+                                    }
+                                }
+                            }
                         }
                     }
 
                     div {
                         a {
-                            div {
-                                div {
+                            .icon_title_sc {
+                                display: flex;
+                                width: 100%;
+                                display: flex;
+                                padding: 16px;
+                                flex: 0 0 auto;
+
+                                .icon_sc {
+                                    width: 24px;
+                                    flex: 0 0 auto;
+                                    margin: 0px 16px 0px 0px;
+
                                     svg {
                                         max-width: 20px;
                                         height: auto;
                                         overflow: hidden;
-
-                                        path {
-                                            fill: rgb(255, 255, 255);
-                                            transition: fill 200ms linear 0ms;
-                                        }
                                     }
 
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .style_news {
+            width: 100%;
+
+            .container_news {
+                width: 1536px;
+                margin: 0px auto;
+
+                @media (max-width: 1680px) {
+                    width: 1336px;
+                }
+
+                @media (max-width: 1460px) {
+                    width: 1136px;
+                }
+
+                @media (max-width: 1280px) {
+                    width: 960px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+
+                }
+
+                @media (max-width: 960px) {
+                    width: 100%;
+                    padding: 0px 30px;
+                }
+
+                .newslist_sc {
+                    width: 100%;
+                    display: flex;
+                    padding: 0px 0px 200px;
+
+                    @media (max-width: 960px) {
+                        flex-wrap: wrap;
+                        padding: 0px;
+                    }
+
+                    .title_sc {
+                        width: 575px;
+                        flex: 0 0 auto;
+
+                        @media (max-width: 1680px) {
+                            width: 50%;
+                        }
+
+                        @media (max-width: 1024px) {
+                            margin: 0px 30px 30px;
+                        }
+
+                        @media (max-width: 960px) {
+                            width: 100%;
+                            margin: 30px 0px;
+                        }
+
+                        h2 {
+                            font-size: 32px;
+                            line-height: 40px;
+                            color: rgb(255, 255, 255);
+                            font-weight: 600;
+                            padding: 0px 0px 0px 16px;
+                            font-family: $font-all;
+
+                            @media (max-width: 1024px) {
+                                padding: 0px;
+                            }
+
+                            @media (max-width: 960px) {
+                                font-size: 24px;
+                                line-height: 34px;
+                            }
+                        }
+                    }
+
+                    .content_sc {
+                        flex: 1 1 auto;
+                        padding: 0px 330px 35px 208px;
+
+                        @media (max-width: 1680px) {
+                            width: 50%;
+                            padding: 0px 16px 35px;
+                        }
+
+                        @media (max-width: 1024px) {
+                            padding: 0px 30px 35px;
+                        }
+
+                        @media (max-width: 960px) {
+                            width: 100%;
+                            padding: 0px 0px 35px;
+                        }
+
+                        .text_sc {
+                            width: 100%;
+
+                            p {
+                                color: rgb(255, 255, 255);
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 600;
+                                font-family: $font-all;
+                            }
+                        }
+
+                        .action_sc {
+                            width: 100%;
+                            margin: 70px 0px 0px;
+
+                            @media (max-width: 960px) {
+                                margin: 30px 0px 0px;
+                            }
+
+                            a {
+                                display: flex;
+                                width: 100%;
+                                color: rgb(255, 255, 255);
+                                text-decoration: none;
+
+                                img {
+                                    margin: 0px 16px 0px 0px;
+                                }
+
+                                span {
+                                    font-size: 16px;
+                                    font-family: "Segoe UI Mono", mono;
+                                    letter-spacing: 0.01rem;
+                                    line-height: 1;
+                                    font-family: $font-all;
                                 }
                             }
                         }
