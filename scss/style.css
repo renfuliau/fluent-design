@@ -1754,10 +1754,44 @@ body .style_main .style_media_sc .container_media .grid_sc {
   position: relative;
 }
 
-body .style_main .style_media_sc .container_media .grid_sc .sc1_how {
+@media (max-width: 1024px) {
+  body .style_main .style_media_sc .container_media .grid_sc {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .grid_block {
   width: 25%;
   height: 384px;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_media_sc .container_media .grid_sc .grid_block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  body .style_main .style_media_sc .container_media .grid_sc .grid_block {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+  }
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .grid_block .content_padding {
+  padding: 16px;
+}
+
+@media (max-width: 1024px) {
+  body .style_main .style_media_sc .container_media .grid_sc .grid_block .content_padding {
+    padding: 19px 28px;
+  }
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .sc1_how {
   z-index: 2;
   background-color: black;
 }
@@ -1783,7 +1817,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc1_how a:hover {
 
 body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .content_sc {
   width: 100%;
-  padding: 16px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1803,6 +1836,13 @@ body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .content_s
 @media (max-width: 1280px) {
   body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .content_sc p {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .content_sc p {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
@@ -1850,9 +1890,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc1_how a:hover labe
 }
 
 body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving {
-  width: 25%;
-  height: 384px;
-  position: relative;
   z-index: 2;
   background-color: #393939;
 }
@@ -1878,7 +1915,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a:hover
 
 body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .content_sc {
   width: 100%;
-  padding: 16px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1898,6 +1934,13 @@ body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .cont
 @media (max-width: 1280px) {
   body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .content_sc p {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .content_sc p {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
@@ -1934,9 +1977,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a:hover
 }
 
 body .style_main .style_media_sc .container_media .grid_sc .sc3_designing {
-  width: 25%;
-  height: 384px;
-  position: relative;
   z-index: 2;
   background-color: #767676;
 }
@@ -1962,7 +2002,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a:hove
 
 body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .content_sc {
   width: 100%;
-  padding: 16px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1982,6 +2021,13 @@ body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .con
 @media (max-width: 1280px) {
   body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .content_sc p {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .content_sc p {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
@@ -2005,9 +2051,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .ico
 }
 
 body .style_main .style_media_sc .container_media .grid_sc .sc4_designing {
-  width: 25%;
-  height: 384px;
-  position: relative;
   z-index: 2;
   background-color: #cccccc;
 }
@@ -2033,7 +2076,6 @@ body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a:hove
 
 body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .content_sc {
   width: 100%;
-  padding: 16px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -2053,6 +2095,13 @@ body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .con
 @media (max-width: 1280px) {
   body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .content_sc p {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .content_sc p {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 

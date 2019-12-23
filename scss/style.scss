@@ -1448,10 +1448,37 @@ body {
                     display: flex;
                     position: relative;
 
-                    .sc1_how {
+                    @media (max-width: 1024px) {
+                        flex-wrap: wrap;
+                    }
+
+
+                    .grid_block {
                         width: 25%;
                         height: 384px;
                         position: relative;
+
+                        @media (max-width: 1024px) {
+                            width: 50%;
+                        }
+
+                        @media (max-width: 767px) {
+                            width: 100%;
+                            height: auto;
+                            min-height: 260px;
+                        }
+
+                        .content_padding {
+                            padding: 16px;
+
+                            @media (max-width: 1024px) {
+                                padding: 19px 28px;
+                            }
+                        }
+                    }
+
+                    .sc1_how {
+
                         z-index: 2;
                         background-color: rgb(0, 0, 0);
 
@@ -1469,7 +1496,6 @@ body {
 
                             .content_sc {
                                 width: 100%;
-                                padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
 
@@ -1483,6 +1509,10 @@ body {
 
                                     @media (max-width: 1280px) {
                                         font-size: 28px;
+                                    }
+                                    @media (max-width: 400px) {
+                                        font-size: 24px;
+                                        line-height: 34px;
                                     }
                                 }
                             }
@@ -1514,12 +1544,13 @@ body {
                                     }
                                 }
                             }
+
                             &:hover p {
                                 color: black;
                             }
 
                             &:hover path {
-                                fill: black !important; 
+                                fill: black !important;
                             }
 
                             &:hover label {
@@ -1529,9 +1560,7 @@ body {
                     }
 
                     .sc2_evolving {
-                        width: 25%;
-                        height: 384px;
-                        position: relative;
+
                         z-index: 2;
                         background-color: rgb(57, 57, 57);
 
@@ -1550,7 +1579,6 @@ body {
 
                             .content_sc {
                                 width: 100%;
-                                padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
 
@@ -1564,6 +1592,10 @@ body {
 
                                     @media (max-width: 1280px) {
                                         font-size: 28px;
+                                    }
+                                    @media (max-width: 400px) {
+                                        font-size: 24px;
+                                        line-height: 34px;
                                     }
                                 }
                             }
@@ -1594,7 +1626,7 @@ body {
                             }
 
                             &:hover path {
-                                fill: black !important; 
+                                fill: black !important;
                             }
 
                             &:hover label {
@@ -1604,9 +1636,7 @@ body {
                     }
 
                     .sc3_designing {
-                        width: 25%;
-                        height: 384px;
-                        position: relative;
+
                         z-index: 2;
                         background-color: rgb(118, 118, 118);
 
@@ -1624,7 +1654,6 @@ body {
 
                             .content_sc {
                                 width: 100%;
-                                padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
 
@@ -1638,6 +1667,10 @@ body {
 
                                     @media (max-width: 1280px) {
                                         font-size: 28px;
+                                    }
+                                    @media (max-width: 400px) {
+                                        font-size: 24px;
+                                        line-height: 34px;
                                     }
                                 }
                             }
@@ -1666,9 +1699,7 @@ body {
                     }
 
                     .sc4_designing {
-                        width: 25%;
-                        height: 384px;
-                        position: relative;
+
                         z-index: 2;
                         background-color: rgb(204, 204, 204);
 
@@ -1686,7 +1717,6 @@ body {
 
                             .content_sc {
                                 width: 100%;
-                                padding: 16px;
                                 flex: 1 1 auto;
                                 margin: 2px 0px 0px;
 
@@ -1700,6 +1730,11 @@ body {
 
                                     @media (max-width: 1280px) {
                                         font-size: 28px;
+                                    }
+
+                                    @media (max-width: 400px) {
+                                        font-size: 24px;
+                                        line-height: 34px;
                                     }
                                 }
                             }
