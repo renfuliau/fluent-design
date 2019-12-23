@@ -1837,6 +1837,18 @@ body .style_main .style_media_sc .container_media .grid_sc .sc1_how a .icon_titl
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
+body .style_main .style_media_sc .container_media .grid_sc .sc1_how a:hover p {
+  color: black;
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .sc1_how a:hover path {
+  fill: black !important;
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .sc1_how a:hover label {
+  color: black !important;
+}
+
 body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving {
   width: 25%;
   height: 384px;
@@ -1909,6 +1921,18 @@ body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a .icon
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
+body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a:hover p {
+  color: black;
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a:hover path {
+  fill: black !important;
+}
+
+body .style_main .style_media_sc .container_media .grid_sc .sc2_evolving a:hover label {
+  color: black !important;
+}
+
 body .style_main .style_media_sc .container_media .grid_sc .sc3_designing {
   width: 25%;
   height: 384px;
@@ -1946,7 +1970,7 @@ body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .con
 }
 
 body .style_main .style_media_sc .container_media .grid_sc .sc3_designing a .content_sc p {
-  color: white;
+  color: black;
   -webkit-transition: color 200ms linear 0ms;
   transition: color 200ms linear 0ms;
   font-size: 32px;
@@ -2017,7 +2041,7 @@ body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .con
 }
 
 body .style_main .style_media_sc .container_media .grid_sc .sc4_designing a .content_sc p {
-  color: white;
+  color: black;
   -webkit-transition: color 200ms linear 0ms;
   transition: color 200ms linear 0ms;
   font-size: 32px;
