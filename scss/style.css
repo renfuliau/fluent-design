@@ -48,7 +48,7 @@ body .all header .header_logo {
 }
 
 body .all header .header_logo a {
-  background-image: url("/img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center;
   background-size: cover;
   width: 16px;
@@ -57,7 +57,7 @@ body .all header .header_logo a {
 }
 
 body .all header .header_logo a:hover {
-  background-image: url("/img/logo2.png");
+  background-image: url("../img/logo2.png");
 }
 
 body .all header .header_title {
@@ -155,7 +155,7 @@ body .all header .header_navigation .links li .link4:hover {
 body .all .mobile_button {
   width: 48px;
   height: 48px;
-  background-image: url("/img/menu.png");
+  background-image: url("../img/menu.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
